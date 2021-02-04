@@ -2,9 +2,144 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title><TOPIC METHOD="getDisplayName" LANGUAGE="{user@getLanguage}"/> - Memórica</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="expo-style.css" type="text/css" rel="stylesheet">
+
+    <!-- reserved for styles, don't forget to remove the / from the thing -->
+    <style type="text/css"></style>
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar fixed-top navbar-light">
+        <a class="navbar-brand" href="https://memoricamexico.gob.mx/es/memorica/Exposiciones">
+          <img type="image/svg+xml" src="work/models/memorica/recursos/img/plan_iguala/logui.svg" alt="" class="logo" width="50px" height="50px">
+        </a>
+        <div class="mini">
+          <a href="" data-toggle="modal" data-target="#modalbotonescompartir" title="Compartir" class="share">
+            <img type="image/svg+xml" alt="Compartir en redes sociales" src="work/models/memorica/recursos/img/plan_iguala/share.svg" title="Compartir en redes Sociales" width="35px" height="35px">
+          </a>
+          <a href="work/models/memorica/recursos/img/plan_ayala/PlanDeIguala_GuiaDidactica.pdf" class="down">
+            <img type="image/svg+xml" alt="Descargar guía didactica" src="work/models/memorica/recursos/img/plan_iguala/down.svg" title="Descargar guía didactica" width="35px" height="35px">
+          </a>
+        </div>
+      </nav>
+    </header>
 
+    <!-- Portada -->
+    <div id="cover" class="container-fluid">
+      <div class="splash pt-5 col-sm-12 d-flex flex-column align-items-center justify-content-between">
+        <h1>El Plan de Yndependencia<br> de la América Septentrional</h1>
+        <div class="intro-splash">
+          <img src="work/models/memorica/recursos/img/plan_ayala/ayala_cover.png" class="img-fluid px-sm-5" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div id="intro" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <h2>Introducción</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div id="video" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <h2>Una guerra que llevaba 10 años</h2>
+          <iframe width="100%" height="415" src="https://www.youtube.com/embed/CRTohe4_-hA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+    <!-- Sala 1 -->
+    <div id="sala1" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <h2>1</h2>
+          <p class="quote">A finales de 1820, los insurgentes continuaban la lucha por la independencia pero llevaban cinco años sin la fuerza necesaria para doblar al ejército novohispano. Las tropas realistas, por su parte, tampoco mostraban tener la capacidad para derrotar a los rebeldes.</p>
+          <p>El <strong>24 de febrero de 1821</strong>, el coronel realista <strong>Agustín de Iturbide</strong> suscribió un programa político denominado Plan de Yndependencia de la América Septentrional. Resulta por demás interesante cómo un oficial del ejército colonial encabezó una proclama en favor de la independencia de la Nueva España. Ante este documento, los insurgentes, sobre todo los de la región del sur, liderados por Vicente Guerrero, respondieron al llamado que habría de cambiar el futuro del país.</p>
+          <a class="ver-mas" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">Ver mas...</a>
+          <div id="collapse1" class="collapse">
+            <p>Los historiadores, dedicados a investigar el pasado, recurren a variados testimonios que de alguna manera les permiten conocer un tiempo que ya no existe más. Esas huellas, también conocidas como "fuentes históricas", les sirven —pero no solamente— para explicar los grandes procesos políticos.. Aquí mostraremos algunos documentos que han permitido guardar memoria de los hechos de la guerra de Independencia.</p>
+            <p>Memórica, México, haz memoria en su corta existencia ha reunido una significativa parte del patrimonio nacional, mismo que ha permitido a los profesionales de la historia reconstruir y explicar algunos sucesos; tal es el caso de un expediente del Archivo General de la Nación, el cual compila correspondencia de Agustín de Iturbide entre 1810 y 1822, años en los que se debatían los insurgentes y el ejército realista, al que éste pertenecía. A lo largo de 155 cartas y 36 recados podemos acercarnos a los pensamientos de su autor sobre los acontecimientos bélicos y políticos de principios del siglo <span class="small-caps">xix</span>. Por otra parte, este compendio también nos muestra, por ejemplo, las maneras en que hace poco más de dos centurias la gente se comunicaba, así como la firma autógrafa del propio Iturbide.</p>
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+    <!-- Sala 2 -->
+    <div id="sala2" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <h2>2</h2>
+          <p class="quote">¿Quién era ese coronel que luchó contra los insurgentes y que acabó proclamando la independencia de la América Septentrional?</p>
+          <p><strong>Agustín de Iturbide</strong>, hijo de padre español y madre criolla, nació en Valladolid de Michoacán (hoy Morelia) en 1783. En su juventud administró la hacienda de su padre e ingresó en el Regimiento de Infantería de su provincia. De acuerdo con Lucas Alamán (1792-1853), tuvo su primer encuentro de armas contra los insurgentes comandados por Miguel Hidalgo en la batalla del Monte de las Cruces. Ya para entonces era teniente y, con los años, obtuvo el grado de coronel y fue comandante general del Ejército del Norte. En 1816 enfrentó una acusación por desvío de fondos. A pesar de no ser condenado, Iturbide prefirió retirarse de la vida militar. No obstante, regresaría a combatir a los insurgentes tiempo después.</p>
+          <a class="ver-mas" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">Ver mas...</a>
+          <div id="collapse2" class="collapse">
+            <p>La tarea de los historiadores no termina con aproximarse a los testimonios que existen de su objeto de estudio; después de analizarlos y responder sus inquietudes, es necesario que las conclusiones o resultados se pongan por escrito para que muchas más personas puedan conocer su versión del pasado. Cabe mencionar que previamente a que la disciplina de la historia se profesionalizara, bastaba la curiosidad erudita o contar con experiencias valiosas para animarse a escribir historias.</p>
+            <p>En Memórica, de entre los múltiples ejemplos de libros que dan cuenta del pasado, encontramos la <em>Historia de Méjico</em> de Lucas Alamán, que es el resultado de la rica cultura del autor y de vivir en carne propia sucesos de suma importancia. Por ello, su gran obra aporta información valiosa sobre los más de 10 años de lucha por la independencia y de sus principales personajes. Por ejemplo, en el tomo 5 podemos leer una descripción de Agustín de Iturbide en la que se le retrata como “Severo en demasía con los insurgentes, deslució sus triunfos con mil actos de crueldad y con la ansia de enriquecerse por todo género de medios, lo que le atrajo una acusación que contra él hicieron varias casas de las principales de Querétaro y Guanajuato, por cuyo motivo fue suspendido del mando y llamado a Mejico a contestar a los cargos que se le hacían”.</p>
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+    <!-- Créditos -->
+    <div id="salas" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-12 col-lg-6 px-5">
+          <h2>Agradecimiento a instituciones</h2>
+          <ul>
+            <li>Archivo General de la Nación</li>
+            <li>Centro de Estudios de Historia de México Carso</li>
+            <li>Dirección General de Bibliotecas</li>
+            <li>Dirección General de Patrimonio Cultural, <span class="small-caps">shcp</span></li>
+            <li>Instituto de Investigaciones Bibliográficas-<span class="small-caps">unam</span></li>
+            <li>Instituto Nacional de Estudios Históricos de las Revoluciones de México</li>
+            <li>Mediateca-<span style="font-variant: small-caps;">inah</span></li>
+            <li>Museo Nacional de la Estampa</li>
+          </ul>
+
+          <h2>Créditos</h2>
+          <ul>
+            <li>Curaduría: Rubén Amador, Amairani Tello</li>
+            <li>Cuidado editorial: Rebeca Flores</li>
+            <li>Diseño web:</li>
+          </ul>
+
+          <h2>Material de Apoyo</h2>
+          <ul>
+            <li>Arenal Fenochio, Jaime del, <em>Cronología de la Independencia (1808-1821)</em>, México, <span style="font-variant: small-caps;">inehrm</span>, 2011. Disponible en: <a href="https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf">https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf</a> </li>
+            <li>Curiel Defossé, Fernando (dir.), <em>Textos insurgentes (1808-1821)</em>, introducción y selección de Virginia Guedea, México, <span style="font-variant: small-caps;">unam</span>, 2010. (Biblioteca del Estudiante Universitario, 126.)</li>
+          </ul>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
