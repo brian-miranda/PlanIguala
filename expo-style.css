@@ -48,12 +48,37 @@ p, a, ul {
   font-style: italic;
 }
 
-a.ver-mas {
+.ver-mas a {
+  color: #000;
   font-family: "EmilyAustin";
   font-size: 2rem;
+  text-decoration: none;
+}
+
+.ver-mas a:hover {
+  color: #ED5E5E;
+  font-family: "EmilyAustin";
+}
+
+.ver-mas {
   text-align: right;
+}
+
+.text-toggle[aria-expanded=false] .text-expanded {
+  display: none;
+}
+.text-toggle[aria-expanded=true] .text-collapsed {
+  display: none;
 }
 
 .small-caps {
   font-variant: small-caps;
+}
+
+#intro, .sala {
+  background-color: #1A6A73;
+}
+
+#video {
+  background-color: #ED5E5E;
 }
