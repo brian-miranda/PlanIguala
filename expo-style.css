@@ -82,3 +82,26 @@ p, a, ul {
 #video {
   background-color: #ED5E5E;
 }
+
+/* ----------------------- INTRO ----------------------- */
+#cover {
+ background-image: url(/work/models/memorica/recursos/img/plan_iguala/fondo-blanco.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center top;
+
+ /* height: 100%;
+ width: 100%; */
+}
+
+.splash {
+  height: 100%;
+}
+
+.intro-splash {
+  height: 100%;
+}
+
+.intro-splash img {
+ width: 100%;
+}
