@@ -278,7 +278,7 @@ ul {
 
 /* ----------------------- COVER ----------------------- */
 #cover, #creditos {
- background-image: url(/work/models/memorica/recursos/img/plan_iguala/fondo-blanco.jpg);
+ background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-blanco.jpg);
  background-repeat: no-repeat;
  background-size: auto;
  background-position: center top;
@@ -301,14 +301,14 @@ ul {
 
 /* ----------------------- INTRO ----------------------- */
 #intro {
- background-image: url(/work/models/memorica/recursos/img/plan_iguala/fondo-verde.jpg);
+ background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-verde.jpg);
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center top;
 }
 
 #video {
- background-image: url(/work/models/memorica/recursos/img/plan_iguala/fondo-rojo.jpg);
+ background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-rojo.jpg);
  background-repeat: no-repeat;
  background-size: cover;
  background-position: top;
@@ -316,7 +316,7 @@ ul {
 
 /* ----------------------- SALAS ----------------------- */
 #salas {
- background-image: url(/work/models/memorica/recursos/img/plan_iguala/fondo-verde.jpg);
+ background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-verde.jpg);
  background-repeat: repeat-y;
  background-size: auto;
  background-position: top;
