@@ -16,7 +16,7 @@
 /* ----------------------- GENERAL ----------------------- */
 html {
   height: 100%;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 body {
@@ -42,6 +42,7 @@ h2 {
 p, a {
   font-family: "Baskerville";
   text-align: justify;
+  line-height: 1.3rem;
 }
 
 ul {
@@ -61,12 +62,22 @@ ul {
 }
 
 .ver-mas a:hover {
-  color: #ED5E5E;
-  font-family: "EmilyAustin";
+  color: darkslategray;
 }
 
 .ver-mas {
   text-align: right;
+}
+
+a.go-to {
+  color: #000;
+  font-family: "EmilyAustin";
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a.go-to:hover {
+  color: darkslategray;
 }
 
 .text-toggle[aria-expanded=false] .text-expanded {
@@ -84,7 +95,7 @@ ul {
   background-color: #ED5E5E;
 }
 
-/* ----------------------- MENUU ----------------------- */
+/* ----------------------- MENU ----------------------- */
 .mini {
   width: 8%;
 }
@@ -229,7 +240,7 @@ ul {
 .overlay nav {
   position: relative;
   height: 70%;
-  top: 40%;
+  top: 45%;
   transform: translateY(-50%);
   font-size: 50px;
   font-weight: 400;
@@ -247,7 +258,7 @@ ul {
 
 .overlay ul li {
   display: block;
-  height: 6%;
+  height: 4%;
   min-height: 50px;
   position: relative;
   opacity: 0;
@@ -255,7 +266,7 @@ ul {
 
 .overlay ul li a {
   font-family: "EmilyAustin";
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
   display: block;
   position: relative;
@@ -279,7 +290,7 @@ ul {
 /* ----------------------- COVER ----------------------- */
 #cover, #creditos {
  background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-blanco.jpg);
- background-repeat: no-repeat;
+ background-repeat: repeat-y;
  background-size: auto;
  background-position: center top;
 
@@ -307,7 +318,7 @@ ul {
  background-position: center top;
 }
 
-#video {
+#video, #gallery {
  background-image: url(work/models/memorica/recursos/img/plan_iguala/fondo-rojo.jpg);
  background-repeat: no-repeat;
  background-size: cover;
