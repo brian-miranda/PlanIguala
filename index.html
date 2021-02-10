@@ -12,11 +12,16 @@
     <style type="text/css"></style>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="spinner mb-1"></div>
+      <h1>Cargando</h1>
+    </div>
     <!-- Header -->
     <header>
       <nav class="navbar fixed-top navbar-light">
         <a class="navbar-brand" href="https://memoricamexico.gob.mx/es/memorica/Exposiciones">
-          <img type="image/svg+xml" src="work/models/memorica/recursos/img/plan_iguala/logui.svg" alt="" class="logo" width="50px" height="50px">
+          <img type="image/svg+xml" src="work/models/memorica/recursos/img/plan_iguala/logui.svg" alt="" class="logo" width="45px" height="45px">
         </a>
         <div class="mini d-flex justify-content-between align-items-center">
           <a href="" data-toggle="modal" data-target="#modalbotonescompartir" title="Compartir" class="share">
@@ -62,7 +67,7 @@
     <!-- Portada -->
     <div id="cover" class="container-fluid px-0">
       <div class="splash pt-5 px-0 col-sm-12 d-flex flex-column align-items-center justify-content-between">
-        <h1>El Plan de Yndependencia<br> de la América Septentrional</h1>
+        <h1 class="pt-4 pt-sm-0">El Plan de Yndependencia<br> de la América Septentrional</h1>
         <div class="intro-splash d-flex align-items-end">
           <img src="work/models/memorica/recursos/img/plan_iguala/splash.png" class="img-fluid" alt="">
         </div>
@@ -83,8 +88,11 @@
         </div>
         <div class="col-lg-3"></div>
       </div>
-      <div class="row transition d-flex align-items-end">
+      <div class="row transition d-none d-sm-flex align-items-end">
         <img src="work/models/memorica/recursos/img/plan_iguala/video-title.png" class="img-fluid" alt="">
+      </div>
+      <div class="row transition d-flex d-sm-none align-items-end">
+        <img src="work/models/memorica/recursos/img/plan_iguala/video-title-sm.png" class="img-fluid" alt="">
       </div>
     </div>
 
@@ -93,7 +101,7 @@
       <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-12 col-lg-6 px-5">
-          <iframe width="100%" height="415" src="https://www.youtube.com/embed/TyS4ACaboVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/TyS4ACaboVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col-lg-3"></div>
       </div>
@@ -574,6 +582,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+      //loader
+      $(window).on("load", function(e) {
+        $("#loader").animate({
+          opacity: 0,
+          zIndex: -1
+        })
+
+        console.log("done");
+      });
+
       //nav menu
       $('#toggle').click(function() {
         $(this).toggleClass('active');
