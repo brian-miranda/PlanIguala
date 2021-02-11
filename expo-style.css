@@ -350,11 +350,47 @@ iframe.video {
 }
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
-/* Extra small devices (cellular telephones, 10px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 19px;
+  }
+}
 
+/* Large devices (desktops and large tablets) */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
 
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 576px) {
+  .mini {
+    width: 13%;
+  }
+
+  .overlay nav {
+    height: 40%;
+    top: 30%;
+  }
+
+  .overlay ul li {
+    height: 10%;
+    min-height: 35px;
+  }
+}
+
+/* Medium devices (small tablets, and landscape phones maybe?) */
+@media only screen and (min-width: 551px) and (max-width: 736px)  {
+  html {
+    font-size: 20px;
+  }
+
+  .mini {
+    width: 19%;
+  }
+}
+
+/* Small devices (most smartphones and smartphone sized devices) */
+@media only screen and (max-width: 550px) {
   html {
     font-size: 19px;
   }
@@ -387,15 +423,17 @@ iframe.video {
 
   iframe.video {
     width: 100%;
-    height: 525;
+    height: 415;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px) {}
+/* Extra small devices (cellular telephones, 10px and up) */
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 17px;
+  }
 
-/* Large devices (desktops, 992px and up) */
-@media only screen and (max-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {}
+  .mini {
+    width: 40%;
+  }
+}
