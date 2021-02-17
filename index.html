@@ -4,18 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title><TOPIC METHOD="getDisplayName" LANGUAGE="{user@getLanguage}"/> - Memórica</title>
+    <link rel="icon" type="image/ico" href="/work/models/memorica/recursos/img/favicon/favicon.ico"/>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="expo-style.css" type="text/css" rel="stylesheet">
 
     <!-- reserved for styles, don't forget to add the / to the thing -->
+    <link href="expo-style.css" type="text/css" rel="stylesheet">
     <style type="text/css"></style>
+
+    <!-- reserved for social metadata -->
+    <RESOURCE TYPE="JSPEditor" STYPE="OpenGraphTags" />
+    <meta property="og:image" content="/work/models/memorica/recursos/img/miniatura_expo_plan_de_iguala.jpg">
+    <meta property="og:image:type" content="image/svg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta name="twitter:image:src" content="https://memoricamexico.gob.mx/work/models/memorica/recursos/img/miniatura_expo_plan_de_iguala.jpg">
   </head>
   <body>
     <!-- Loader -->
     <div id="loader" class="d-flex flex-column justify-content-center align-items-center">
       <div class="spinner mb-1"></div>
-      <h1>Cargando</h1>
+      <h1>Cargando...</h1>
     </div>
     <!-- Header -->
     <header>
@@ -114,8 +123,10 @@
     <div id="video" class="container-fluid pt-5">
       <div class="row">
         <div class="col-lg-3"></div>
-        <div class="col-12 col-lg-6 px-5">
-          <iframe class="video" height="415" src="https://www.youtube.com/embed/TyS4ACaboVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-12 col-lg-6 px-5 pb-5 pb-sm-0">
+          <div class="video-container">
+            <iframe class="video" height="415" src="https://www.youtube.com/embed/mzUFa5bfdw0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
         <div class="col-lg-3"></div>
       </div>
@@ -585,8 +596,55 @@
         <div class="row">
           <div class="col-lg-3"></div>
           <div class="col-12 col-lg-6 px-5">
-            <h2 class="mt-4 mt-sm-0">Agradecimiento a instituciones</h2>
+            <h2 class="mt-4 mt-sm-0">Material de Apoyo</h2>
             <ul>
+              <li>Arenal Fenochio, Jaime del, <em>Cronología de la Independencia (1808-1821)</em>, México, <span style="font-variant: small-caps;">inehrm</span>, 2011. Disponible en: <a href="https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf">https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf</a> </li>
+              <li>Curiel Defossé, Fernando (dir.), <em>Textos insurgentes (1808-1821)</em>, introducción y selección de Virginia Guedea, México, <span style="font-variant: small-caps;">unam</span>, 2010. (Biblioteca del Estudiante Universitario, 126.)</li>
+            </ul>
+
+            <h2>Créditos</h2>
+            <ul>
+              <li>Curaduría: Rubén Amador, Amairani Tello</li>
+              <li>Cuidado editorial: Rebeca Flores</li>
+              <li>Gestión Institucional, Ivonne Charles Hinojosa</li>
+              <li>Diseño gráfico y web: Brian Miranda</li>
+              <li>Animación y edición de audio: Bárbara Hernández, César López</li>
+            </ul>
+
+            <h2>Agradecimiento a instituciones</h2>
+            <p>Queremos agradecer a las instituciones y a las personas que colaboran y participan en esta exposición:</p>
+            <ul>
+              <li>Comisión de Conmemoraciones 2021</li>
+              <li>Coordinación de Memoria Histórica y Cultural de México<br>MEMÓRICA. MÉXICO, HAZ MEMORIA</li>
+              <li>Secretaría de Hacienda y Crédito Público</li>
+              <ul>
+                <li>Arturo Herrera Gutiérrez <br>Secretario de Hacienda y Crédito Público</li>
+                <li>Thalía Laguna Aragón <br>Oficial Mayor</li>
+                <li>Adriana Castillo Román <br>Directora General de Promoción Cultural y Acervo Patrimonial y de la Conservaduría de Palacio Nacional</li>
+                <li>Dolores Saucedo Ruz <br>Coordinadora de Museos, Recintos y Colecciones</li>
+                <li>Patricia López Arenas <br>Directora de Promoción Cultural y Bibliotecas</li>
+                <li>Carmen Saucedo Zarco y Carlos Mújica Suárez <br>Contenidos</li>
+              </ul>
+              <li>Acervo Histórico Diplomático / Secretaría de Relaciones Exteriores</li>
+              <ul>
+                <li>Marcelo Ebrard Casaubon <br>Secretario de Relaciones Exteriores</li>
+                <li>Alejandro Celorio Alcántara <br>Consultor Jurídico</li>
+                <li>Laura Beatriz Moreno Rodríguez <br>Directora General del Acervo Histórico Diplomático</li>
+              </ul>
+              <li>Archivo General Agrario</li>
+              <ul>
+                <li>Román Meyer Falcón <br>Secretaría de Desarrollo Agrario, Territorial y Urbano</li>
+                <li>Plutarco García Jiménez <br>Dirección en Jefe del Registro Agrario Nacional</li>
+                <li>Regina Tapia Chávez <br>Dirección del Archivo General Agrario</li>
+              </ul>
+              <li>Secretaría de Cultura</li>
+              <ul>
+                <li>Alejandra Frausto Guerrero <br>Secretaria de Cultura</li>
+                <li>Marina Núñez Bespalova <br>Subsecretaria de Desarrollo Cultural</li>
+                <li>Felipe Ávila Espinoza <br>Director General del Instituto Nacional de Estudios Históricos de las Revoluciones de México</li>
+              </ul>
+
+              <!-- viegos -->
               <li>Archivo General de la Nación</li>
               <li>Centro de Estudios de Historia de México Carso</li>
               <li>Dirección General de Bibliotecas</li>
@@ -595,19 +653,6 @@
               <li>Instituto Nacional de Estudios Históricos de las Revoluciones de México</li>
               <li>Mediateca-<span style="font-variant: small-caps;">inah</span></li>
               <li>Museo Nacional de la Estampa</li>
-            </ul>
-
-            <h2>Créditos</h2>
-            <ul>
-              <li>Curaduría: Rubén Amador, Amairani Tello</li>
-              <li>Cuidado editorial: Rebeca Flores</li>
-              <li>Diseño web:</li>
-            </ul>
-
-            <h2>Material de Apoyo</h2>
-            <ul>
-              <li>Arenal Fenochio, Jaime del, <em>Cronología de la Independencia (1808-1821)</em>, México, <span style="font-variant: small-caps;">inehrm</span>, 2011. Disponible en: <a href="https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf">https://www.inehrm.gob.mx/work/models/inehrm/Resource/437/1/images/crono_independencia.pdf</a> </li>
-              <li>Curiel Defossé, Fernando (dir.), <em>Textos insurgentes (1808-1821)</em>, introducción y selección de Virginia Guedea, México, <span style="font-variant: small-caps;">unam</span>, 2010. (Biblioteca del Estudiante Universitario, 126.)</li>
             </ul>
           </div>
           <div class="col-lg-3"></div>
