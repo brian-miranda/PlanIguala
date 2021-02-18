@@ -126,7 +126,7 @@ a.go-to:hover {
 
 /* ----------------------- MENU ----------------------- */
 .mini {
-  width: 8%;
+  width: 5.3%;
 }
 
 .button-container {
@@ -385,6 +385,12 @@ iframe.video {
   opacity: .5;
 }
 
+/* ----------------------- CREDITEA ----------------------- */
+.centered-list, .centered-list ul {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -394,7 +400,7 @@ iframe.video {
   }
 
   .mini {
-    width: 11%;
+    width: 7%;
   }
 }
 
@@ -405,7 +411,7 @@ iframe.video {
   }
 
   .mini {
-    width: 13%;
+    width: 9.5%;
   }
 
   .overlay nav {
@@ -426,7 +432,7 @@ iframe.video {
   }
 
   .mini {
-    width: 19%;
+    width: 12.5%;
   }
 }
 
@@ -449,7 +455,7 @@ iframe.video {
   }
 
   .mini {
-    width: 35%;
+    width: 23%;
   }
 
   .overlay nav {
@@ -468,12 +474,12 @@ iframe.video {
 }
 
 /* Extra small devices (cellular telephones, 10px and up) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
   html {
     font-size: 17px;
   }
 
   .mini {
-    width: 40%;
+    width: 30%;
   }
 }
